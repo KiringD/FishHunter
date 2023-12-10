@@ -1,0 +1,40 @@
+# mime.types
+
+# Поддерживаемые MIME-типы для React JS
+
+# Текстовые файлы
+text/html                          html htm shtml;
+text/css                           css;
+text/javascript                    js;
+
+# Изображения
+image/jpeg                         jpeg jpg;
+image/png                          png;
+image/gif                          gif;
+image/svg+xml                      svg svgz;
+
+# Шрифты
+application/x-font-ttf             ttf;
+font/opentype                      otf;
+font/woff                          woff;
+font/woff2                         woff2;
+application/vnd.ms-fontobject      eot;
+
+# Другие типы файлов
+application/json                   json;
+application/xml                    xml;
+application/pdf                    pdf;
+application/zip                    zip;
+application/octet-stream           bin exe dll;
+application/msword                 doc;
+application/vnd.ms-excel            xls;
+application/vnd.ms-powerpoint       ppt;
+
+# Аудио
+audio/mpeg                         mp3;
+audio/wav                          wav;
+
+# Видео
+video/mp4                          mp4;
+video/webm                         webm;
+video/x-flv                        flv;

@@ -1,0 +1,645 @@
+.zone {
+    margin-top: 3rem;
+    width: 1440px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.accountName {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.workZone {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0.8rem;
+    border: #797979 solid 1px;
+}
+
+.sitesPanel {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* gap: 10px; */
+}
+
+
+.EsiteElement {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+    width: 226.6px;
+    height: 226.6px;
+    border: #797979 solid 2px;
+}
+
+/* .siteElement:hover .decBorder {
+    background-color: #fff;
+} */
+
+.EplusPlus {
+    transition: fill 300ms ease-in-out;
+}
+
+.EplusRound {
+    transition: fill 300ms ease-in-out;
+}
+
+.EsiteElement:hover .EplusPlus {
+    fill: #000;
+}
+
+.EsiteElement:hover .EplusRound {
+    fill: #fff;
+}
+
+.EsiteElement:hover .EplusText {
+    opacity: 1;
+}
+
+.EsiteElement:hover .EdecBorder {
+    background-color: #00000091;
+}
+
+.EsiteElement:hover .EsiteBack {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.EsiteBack {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(11, 12, 22, 0.40) 0%, rgba(11, 12, 22, 0.40) 100%), url("../img/site_back.jpg"), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.EdecBorder {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 196.6px;
+    height: 196.6px;
+    border: #ffffff solid 2px;
+    background-color: #00000000;
+    transition: background-color 300ms ease-in-out;
+    z-index: 2;
+}
+
+.EsitePlus {
+    fill: #fff;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.EplusText {
+    opacity: 0;
+    color: #fff;
+    position: relative;
+    width: 70%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: opacity 300ms ease-in-out;
+}
+
+.siteElement {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+    width: 226.6px;
+    height: 226.6px;
+    border: #797979 solid 2px;
+}
+
+.siteBack {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(11, 12, 22, 0.40) 0%, rgba(11, 12, 22, 0.40) 100%), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    transition: filter 300ms ease-in-out;
+}
+
+.decBorder {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 196.6px;
+    height: 196.6px;
+    border: #ffffff solid 2px;
+    background-color: #00000000;
+    transition: background-color 300ms ease-in-out;
+    z-index: 2;
+}
+
+.plusText {
+    color: #fff;
+    width: 90%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: font-size 300ms ease-in-out;
+}
+
+.siteElement:hover .plusText {
+    font-size: 1.4rem;
+}
+
+.siteElement:hover .siteBack {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+
+.siteWorkZone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CCECEB;
+    border: #797979 solid 1px;
+    border-left: 0;
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.EmptyPlaceholder {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #4e4e4e;
+    font-weight: 500;
+}
+
+.addTitle {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #353535;
+    font-weight: 500;
+}
+
+
+.domainContainer {
+    display: flex;
+    gap: 0.5rem;
+    width: fit-content;
+    background-color: #f2f2f2;
+    padding: 0.5rem;
+    border: 1px solid #3498db;
+    border-radius: 8px;
+}
+
+.domainItem {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #3498db;
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+    position: relative;
+    outline: none;
+    /* Убираем контур при фокусе */
+}
+
+.domainItem:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+
+.domainItem.selected {
+    background-color: #fff;
+    color: #3498dbbb;
+}
+
+.domainItem.selected::before {
+    content: '\2713';
+    /* Чек-символ ✓ вместо креста */
+    font-size: 2rem;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.com {
+    background-color: grey;
+    border-color: grey;
+    cursor: default;
+}
+
+.com:hover {
+    background-color: grey;
+    color: #fff;
+}
+
+.com.selected {
+    color: grey;
+}
+
+.com.selected:hover {
+    background-color: white;
+    color: grey;
+}
+
+.addSubTitle {
+    font-size: 1.5rem;
+    color: #353535;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.addContent {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 70%;
+    border: #797979 solid 1px;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+}
+
+.addFirstlineContainer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+:root {
+
+    --input-color: #222;
+    --input-border: #CDD9ED;
+    --input-background: #fff;
+    --input-placeholder: #CBD1DC;
+
+    --input-border-focus: #3498db;
+
+    --group-color: #99A3BA;
+    --group-border: var(--input-border);
+    --group-background: #EEF4FF;
+
+    --group-color-focus: #fff;
+    --group-border-focus: var(--input-border-focus);
+    --group-background-focus: #3498db;
+
+}
+
+.formField {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: var(--input-color);
+    border: 1px solid var(--input-border);
+    background: var(--input-background);
+    transition: border .3s ease;
+
+    &::placeholder {
+        color: var(--input-placeholder);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--input-border-focus);
+    }
+}
+
+.formGroup {
+    position: relative;
+    display: flex;
+    width: 100%;
+
+    &>span,
+    .form-field {
+        white-space: nowrap;
+        display: block;
+
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+        }
+
+        &:first-child {
+            border-radius: 6px 0 0 6px;
+        }
+
+        &:last-child {
+            border-radius: 0 6px 6px 0;
+        }
+
+        &:not(:first-child) {
+            margin-left: -1px;
+        }
+    }
+
+    .formField {
+        position: relative;
+        z-index: 1;
+        flex: 1 1 auto;
+        width: 1%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &>span {
+        text-align: center;
+        padding: 8px 12px;
+        font-size: 14px;
+        line-height: 25px;
+        color: var(--group-color);
+        background: var(--group-background);
+        border: 1px solid var(--group-border);
+        transition: background .3s ease, border .3s ease, color .3s ease;
+    }
+
+    &:focus-within {
+        &>span {
+            color: var(--group-color-focus);
+            background: var(--group-background-focus);
+            border-color: var(--group-border-focus);
+        }
+    }
+}
+
+.checkboxInput {
+    display: none;
+
+    &:checked+label .checkbox {
+        &:after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+}
+
+.checkbox {
+    border: 1px solid #3498db;
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 12px;
+        height: 12px;
+        background-color: #3498db;
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+}
+
+.checkboxText {
+    font-size: 1.1rem;
+    margin-left: 0.3rem;
+    position: relative;
+    top: -2px;
+}
+
+.addButton {
+    margin-top: 1rem;
+    width: 9rem;
+    height: 2.5rem;
+    border: 2px solid #3498db;
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+    position: relative;
+    outline: none;
+    /* Убираем контур при фокусе */
+}
+
+.addButton:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+.backButton {
+    margin-top: 0.3rem;
+}
+
+.siteTitle {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #353535;
+    font-weight: 500;
+    width: 85%;
+    text-align: center;
+}
+
+.siteInput {
+    width: 350px;
+    padding: 15px;
+    margin: 0px 0 20px 0;
+    border: 1px solid grey;
+    border-radius: 0.8rem;
+    background: #f1f1f1;
+    transition: background-color 300ms ease-in, border 300ms ease-in;
+    /* transition: border 300ms ease-in; */
+}
+
+
+.siteInput:last-child {
+    margin: 10px 0 0 0;
+}
+
+.siteInfoContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 2rem;
+    border: 2px solid #3498db;
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 1rem;
+    position: relative;
+    outline: none;
+    /* Убираем контур при фокусе */
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+
+.button.selected::before {
+    content: '\2713';
+    /* Чек-символ ✓ вместо креста */
+    font-size: 2rem;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttonRed {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 2rem;
+    border: 2px solid rgb(219, 52, 52);
+    background-color: rgb(219, 52, 52);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 1rem;
+    position: relative;
+    outline: none;
+    /* Убираем контур при фокусе */
+}
+
+.buttonRed:hover {
+    background-color: #fff;
+    color: rgb(219, 52, 52);
+}
+
+
+.buttonRed.selected::before {
+    content: '\2713';
+    /* Чек-символ ✓ вместо креста */
+    font-size: 2rem;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.zoneSubtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.CloneContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cloneElement {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+    width: 226.6px;
+    height: 226.6px;
+    border: #797979 solid 2px;
+}
+
+.cloneBack {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(11, 12, 22, 0.40) 0%, rgba(11, 12, 22, 0.40) 100%), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    transition: filter 300ms ease-in-out;
+}
+
+.cloneText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #fff;
+    width: 90%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: font-size 300ms ease-in-out;
+    z-index: 1;
+}
+
+.cloneElement:hover .cloneText {
+    font-size: 1.4rem;
+}
+
+.cloneElement:hover .cloneBack {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}

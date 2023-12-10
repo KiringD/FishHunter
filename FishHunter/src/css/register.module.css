@@ -1,0 +1,120 @@
+.registerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(241, 245, 248);
+    min-height: calc(100vh - 7.3125rem);
+}
+
+.registerZone {
+    /* margin-top: 80px;
+    margin-bottom: 80px; */
+    position: relative;
+    height: 550px;
+    width: 1000px;
+}
+
+.loginZone {
+    /* margin-top: 80px;
+    margin-bottom: 80px; */
+    position: relative;
+    height: 400px;
+    width: 500px;
+}
+
+.registerFrame {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #797979;
+    border-radius: 0.8rem;
+}
+
+.registerImage {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerFish {
+    width: 80%;
+    rotate: 20deg;
+}
+
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    /* background-color: aqua; */
+}
+
+.loginForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    /* background-color: aqua; */
+}
+
+.registerTitle{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.registerFields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.registerInput {
+    width: calc(100% - 15px);
+    padding: 15px;
+    padding-right: 0;
+    margin: 5px 0 20px 0;
+    border: 1px solid #3498db;
+    border-radius: 0.8rem;
+    background: #f1f1f1;
+    transition: background-color 300ms ease-in, border 300ms ease-in;
+    /* transition: border 300ms ease-in; */
+}
+
+.registerInput:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.registerInput:hover {
+    background-color: #ddd;
+    outline: none;
+}
+
+.registerInput:last-child {
+    margin: 10px 0 0 0;
+}
+
+.registerButton {
+    border-radius: 0.8rem !important; 
+    font-weight: 600;
+    height: 3rem !important;
+    width: 100% !important;
+    align-self: center;
+}
+
+.additionOption {
+    color: #000;
+    margin-top: 0.5rem;
+    text-decoration: underline #fff;
+    cursor: pointer;
+    transition: text-decoration-color 0.2s ease-in-out;
+}
+
+
+.additionOption:hover {
+    text-decoration-color: #000;
+}
